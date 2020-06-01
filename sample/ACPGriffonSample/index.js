@@ -9,17 +9,10 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { NativeModules } from 'react-native';
-const ACPGriffon = NativeModules.ACPGriffon;
+import {AppRegistry, Alert} from 'react-native';
+import App from './js/App';
+import {name as appName} from './app.json';
 
-export default {
-    startSession : (url) => {
-        ACPGriffon.startSession(url);
-    },
-    getVersion : () => {
-        return Promise.resolve(ACPGriffon.getExtensionVersion());
-    },
-    registerExtension: () => {
-        ACPGriffon.registerExtension();
-    }
-};
+AppRegistry.registerComponent(appName, () => App);    
+
+

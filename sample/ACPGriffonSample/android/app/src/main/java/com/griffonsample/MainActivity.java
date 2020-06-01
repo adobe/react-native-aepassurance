@@ -9,17 +9,18 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-import { NativeModules } from 'react-native';
-const ACPGriffon = NativeModules.ACPGriffon;
+package com.griffonsample;
 
-export default {
-    startSession : (url) => {
-        ACPGriffon.startSession(url);
-    },
-    getVersion : () => {
-        return Promise.resolve(ACPGriffon.getExtensionVersion());
-    },
-    registerExtension: () => {
-        ACPGriffon.registerExtension();
-    }
-};
+import com.facebook.react.ReactActivity;
+
+public class MainActivity extends ReactActivity {
+
+  /**
+   * Returns the name of the main component registered from JavaScript. This is used to schedule
+   * rendering of the component.
+   */
+  @Override
+  protected String getMainComponentName() {
+    return "GriffonSample";
+  }
+}

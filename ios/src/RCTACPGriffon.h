@@ -1,3 +1,4 @@
+
 /*
 Copyright 2020 Adobe. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -8,18 +9,8 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
+#import <React/RCTBridgeModule.h>
 
-import { NativeModules } from 'react-native';
-const ACPGriffon = NativeModules.ACPGriffon;
-
-export default {
-    startSession : (url) => {
-        ACPGriffon.startSession(url);
-    },
-    getVersion : () => {
-        return Promise.resolve(ACPGriffon.getExtensionVersion());
-    },
-    registerExtension: () => {
-        ACPGriffon.registerExtension();
-    }
-};
+@interface RCTACPGriffon : NSObject <RCTBridgeModule>
+@end
+  
