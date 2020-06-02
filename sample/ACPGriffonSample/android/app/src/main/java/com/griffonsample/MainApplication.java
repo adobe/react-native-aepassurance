@@ -13,6 +13,9 @@ package com.griffonsample;
 
 import android.app.Application;
 import android.content.Context;
+
+import com.adobe.marketing.mobile.Griffon;
+import com.adobe.marketing.mobile.MobileCore;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
@@ -54,6 +57,8 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
+    MobileCore.setApplication(this);
+    Griffon.registerExtension();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
