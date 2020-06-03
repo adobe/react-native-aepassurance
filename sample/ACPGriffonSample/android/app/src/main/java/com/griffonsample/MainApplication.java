@@ -15,7 +15,12 @@ import android.app.Application;
 import android.content.Context;
 
 import com.adobe.marketing.mobile.Griffon;
+import com.adobe.marketing.mobile.Identity;
+import com.adobe.marketing.mobile.Lifecycle;
+import com.adobe.marketing.mobile.LoggingMode;
 import com.adobe.marketing.mobile.MobileCore;
+import com.adobe.marketing.mobile.Signal;
+import com.adobe.marketing.mobile.WrapperType;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
@@ -58,7 +63,16 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
-    MobileCore.setApplication(this);
+    MobileCore.setApplication(this); // add this line
+    MobileCore.configureWithAppID("94f571f308d5/e30a9514788b/launch-44fec1a705f1-development");
+
+    try {
+        Griffon.registerExtension();
+    } catch (Exception e) {
+          // handle exception
+    }
+
+    MobileCore.start(null);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
 

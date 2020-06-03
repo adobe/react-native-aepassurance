@@ -18,8 +18,5 @@ export default {
     },
     extensionVersion : () => {
         return Promise.resolve(ACPGriffon.getExtensionVersion());
-    },
-    registerExtension: () => {
-        ACPGriffon.registerExtension();
     }
 };

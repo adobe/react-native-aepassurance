@@ -13,25 +13,19 @@ import React, { Component } from 'react';
 
 const RNACPCore = require('@adobe/react-native-acpcore'); 
 const ACPCore = RNACPCore.ACPCore;
+// import { ACPGriffon } from '@adobe/react-native-acpgriffon';
+// const RNACPGriffon = require('@adobe/react-native-acpgriffon'); 
+// const ACPGriffon = RNACPGriffon.ACPGriffon;
 
 import { StyleSheet, View, Text, Alert, ImageBackground } from 'react-native';
 
 export default class App extends Component {
   state = {
-    isRegistered: false,
-    version: ""
+    isRegistered: true, //Initialize with true since we are registering in Native code. Initialize it with false if regsiterning SDK in JS.
+     version: ""
   };
 
-  componentDidMount() {
-    ACPCore.configureWithAppId("94f571f308d5/e30a9514788b/launch-44fec1a705f1-development");
-    const ACPGriffon = require('@adobe/react-native-acpgriffon').ACPGriffon; 
-    if(ACPGriffon){
-      ACPGriffon.registerExtension();
-    }  
-    ACPCore.start().then((hasStarted) => {
-      Alert.alert('AEP SDK has started.');
-    });
-  }
+  componentDidMount() {}
 
   startGriffonSession = () => {
     const ACPGriffon = require('@adobe/react-native-acpgriffon').ACPGriffon; 

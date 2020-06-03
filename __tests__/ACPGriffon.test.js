@@ -15,11 +15,4 @@ test('Test Start session', () => {
     ACPGriffon.startSession('');
     expect(spy).toHaveBeenCalled();
 });
-
-test('Test Register Extension', () => {
-    
-    const spy = jest.spyOn(NativeModules.ACPGriffon, 'registerExtension');
-    ACPGriffon.registerExtension();
-    expect(spy).toHaveBeenCalled();
-});
 });

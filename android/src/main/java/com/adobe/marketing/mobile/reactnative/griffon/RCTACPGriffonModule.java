@@ -39,14 +39,6 @@ public class RCTACPGriffonModule extends ReactContextBaseJavaModule {
         }
     }
 
-    @ReactMethod
-    public void registerExtension() {
-        if(reactContext.hasCurrentActivity()){
-            AEPCoreBridge.setCurrentActivity(reactContext.getCurrentActivity());
-        }
-        Griffon.registerExtension();
-    }
-
     @Override
     public String getName() {
         return "ACPGriffon";

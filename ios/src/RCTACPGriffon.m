@@ -32,9 +32,5 @@ RCT_EXPORT_METHOD(startSession: (NSString *) url){
         [ACPGriffon startSession: nsUrl];
     }
 }
-
-RCT_EXPORT_METHOD(registerExtension){
-    [ACPGriffon registerExtension];
-}
 @end
   
