@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = "Apache 2.0 License"
   s.platform     = :ios, "10.0"
   
-  s.source       = { :git => "https://github.com/adobe/react-native-acp-griffon", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/adobe/react-native-acpgriffon", :tag => "#{s.version}" }
   s.source_files  = 'ios/src/**/*.{h,m}','ios/libs/**/*.{h,m}'
   s.requires_arc = true
 

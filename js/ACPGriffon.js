@@ -16,7 +16,7 @@ export default {
     startSession : (url) => {
         ACPGriffon.startSession(url);
     },
-    getVersion : () => {
+    extensionVersion : () => {
         return Promise.resolve(ACPGriffon.getExtensionVersion());
     },
     registerExtension: () => {

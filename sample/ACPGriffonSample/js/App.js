@@ -23,14 +23,13 @@ export default class App extends Component {
   };
 
   componentDidMount() {
+    ACPCore.configureWithAppId("94f571f308d5/e30a9514788b/launch-44fec1a705f1-development");
     const ACPGriffon = require('@adobe/react-native-acpgriffon').ACPGriffon; 
     if(ACPGriffon){
       ACPGriffon.registerExtension();
-    }
-      
+    }  
     ACPCore.start().then((hasStarted) => {
-      Alert.alert('acp core started');
-      ACPCore.configureWithAppId("94f571f308d5/e30a9514788b/launch-44fec1a705f1-development");
+      Alert.alert('AEP SDK has started.');
     });
   }
 
@@ -44,7 +43,7 @@ export default class App extends Component {
   getVersion = () => {
     const ACPGriffon = require('@adobe/react-native-acpgriffon').ACPGriffon; 
     if(ACPGriffon){
-         ACPGriffon.getVersion().then((version) => {
+         ACPGriffon.extensionVersion().then((version) => {
            Alert.alert(`Version:: ${version}`);
            this.setState(() => ({version}));
          });   

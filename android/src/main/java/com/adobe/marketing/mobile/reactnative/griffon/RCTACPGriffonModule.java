@@ -12,6 +12,7 @@ governing permissions and limitations under the License.
 package com.adobe.marketing.mobile.reactnative.griffon;
 
 import com.adobe.marketing.mobile.Griffon;
+import com.adobe.marketing.mobile.AEPCoreBridge;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -40,6 +41,9 @@ public class RCTACPGriffonModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void registerExtension() {
+        if(reactContext.hasCurrentActivity()){
+            AEPCoreBridge.setCurrentActivity(reactContext.getCurrentActivity());
+        }
         Griffon.registerExtension();
     }
 

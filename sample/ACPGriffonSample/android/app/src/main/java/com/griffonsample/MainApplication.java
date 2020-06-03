@@ -57,9 +57,8 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
-    MobileCore.setApplication(this);
-    Griffon.registerExtension();
     SoLoader.init(this, /* native exopackage */ false);
+    MobileCore.setApplication(this);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
 
