@@ -74,14 +74,14 @@ ACPGriffon.getVersion().then(version => console.log("AdobeExperienceSDK: ACPGrif
 
 ###### **iOS**
 ```objective-c
-#import <RCTACPAnalytics/ACPAnalytics.h>
+#import <RCTACPGriffon/ACPGriffon.h>
 
 [ACPGriffon registerExtension];
 ```
 
 ###### **Android:**
 ```java
-import com.adobe.marketing.mobile.Analytics;
+import com.adobe.marketing.mobile.Griffon;
 Griffon.registerExtension();
 ```
 
