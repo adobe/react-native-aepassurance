@@ -12,8 +12,6 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		934C402D013B08272ECF68E7 /* libPods-ACPGriffonSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9410DEB90DA4206C7EE280E0 /* libPods-ACPGriffonSample.a */; };
-		CBC05E45B837D1FA66B8A220 /* libPods-ACPGriffonSample-ACPGriffonSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B3D40121EB69CA23A66732 /* libPods-ACPGriffonSample-ACPGriffonSampleTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +29,6 @@
 		00E356EE1AD99517003FC87E /* ACPGriffonSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACPGriffonSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* GriffonSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GriffonSampleTests.m; sourceTree = "<group>"; };
-		0BE321B16563ECBA2E12200D /* Pods-GriffonSample-GriffonSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriffonSample-GriffonSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-GriffonSample-GriffonSampleTests/Pods-GriffonSample-GriffonSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		10C73AE70A5AD7EDB7647745 /* Pods-ACPGriffonSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACPGriffonSample.debug.xcconfig"; path = "Target Support Files/Pods-ACPGriffonSample/Pods-ACPGriffonSample.debug.xcconfig"; sourceTree = "<group>"; };
-		1348800BF9939799E4EE8F7A /* Pods-ACPGriffonSample-ACPGriffonSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACPGriffonSample-ACPGriffonSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ACPGriffonSample-ACPGriffonSampleTests/Pods-ACPGriffonSample-ACPGriffonSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ACPGriffonSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACPGriffonSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GriffonSample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GriffonSample/AppDelegate.m; sourceTree = "<group>"; };
@@ -41,21 +36,8 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GriffonSample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GriffonSample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GriffonSample/main.m; sourceTree = "<group>"; };
-		2FC606110268AC5E021406E1 /* Pods-GriffonSample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriffonSample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-GriffonSample-tvOS/Pods-GriffonSample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		34AA0EBE1C0C9B7DB954B469 /* Pods-GriffonSample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriffonSample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-GriffonSample-tvOS/Pods-GriffonSample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		3B8EC0C319B549ED9EE6A0D8 /* Pods-GriffonSample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriffonSample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-GriffonSample-tvOSTests/Pods-GriffonSample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4DA55739BF4B095FA55314C0 /* Pods-GriffonSample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriffonSample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-GriffonSample-tvOSTests/Pods-GriffonSample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		5B2A88086896C66576575534 /* Pods-GriffonSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriffonSample.debug.xcconfig"; path = "Target Support Files/Pods-GriffonSample/Pods-GriffonSample.debug.xcconfig"; sourceTree = "<group>"; };
-		5FAE21AF1A8CC008CEC080F5 /* libPods-GriffonSample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GriffonSample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		877D5F5FBC59AB23D743E0AE /* Pods-GriffonSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriffonSample.release.xcconfig"; path = "Target Support Files/Pods-GriffonSample/Pods-GriffonSample.release.xcconfig"; sourceTree = "<group>"; };
-		9410DEB90DA4206C7EE280E0 /* libPods-ACPGriffonSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACPGriffonSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		95760B3535CD75FB2ED80FEB /* Pods-GriffonSample-GriffonSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GriffonSample-GriffonSampleTests.release.xcconfig"; path = "Target Support Files/Pods-GriffonSample-GriffonSampleTests/Pods-GriffonSample-GriffonSampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		B162BAA4F62C2A961DC4412C /* Pods-ACPGriffonSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACPGriffonSample.release.xcconfig"; path = "Target Support Files/Pods-ACPGriffonSample/Pods-ACPGriffonSample.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F0B3D40121EB69CA23A66732 /* libPods-ACPGriffonSample-ACPGriffonSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACPGriffonSample-ACPGriffonSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F90B338E5094CFFC380B4CC0 /* libPods-GriffonSample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GriffonSample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9CE00CB19DB0A101C3B24A7 /* Pods-ACPGriffonSample-ACPGriffonSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACPGriffonSample-ACPGriffonSampleTests.release.xcconfig"; path = "Target Support Files/Pods-ACPGriffonSample-ACPGriffonSampleTests/Pods-ACPGriffonSample-ACPGriffonSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBC05E45B837D1FA66B8A220 /* libPods-ACPGriffonSample-ACPGriffonSampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934C402D013B08272ECF68E7 /* libPods-ACPGriffonSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,10 +94,6 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				F90B338E5094CFFC380B4CC0 /* libPods-GriffonSample-tvOS.a */,
-				5FAE21AF1A8CC008CEC080F5 /* libPods-GriffonSample-tvOSTests.a */,
-				9410DEB90DA4206C7EE280E0 /* libPods-ACPGriffonSample.a */,
-				F0B3D40121EB69CA23A66732 /* libPods-ACPGriffonSample-ACPGriffonSampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,18 +132,6 @@
 		D5CF8E6FBB8C6C1D019200C2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5B2A88086896C66576575534 /* Pods-GriffonSample.debug.xcconfig */,
-				877D5F5FBC59AB23D743E0AE /* Pods-GriffonSample.release.xcconfig */,
-				0BE321B16563ECBA2E12200D /* Pods-GriffonSample-GriffonSampleTests.debug.xcconfig */,
-				95760B3535CD75FB2ED80FEB /* Pods-GriffonSample-GriffonSampleTests.release.xcconfig */,
-				2FC606110268AC5E021406E1 /* Pods-GriffonSample-tvOS.debug.xcconfig */,
-				34AA0EBE1C0C9B7DB954B469 /* Pods-GriffonSample-tvOS.release.xcconfig */,
-				3B8EC0C319B549ED9EE6A0D8 /* Pods-GriffonSample-tvOSTests.debug.xcconfig */,
-				4DA55739BF4B095FA55314C0 /* Pods-GriffonSample-tvOSTests.release.xcconfig */,
-				10C73AE70A5AD7EDB7647745 /* Pods-ACPGriffonSample.debug.xcconfig */,
-				B162BAA4F62C2A961DC4412C /* Pods-ACPGriffonSample.release.xcconfig */,
-				1348800BF9939799E4EE8F7A /* Pods-ACPGriffonSample-ACPGriffonSampleTests.debug.xcconfig */,
-				F9CE00CB19DB0A101C3B24A7 /* Pods-ACPGriffonSample-ACPGriffonSampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -179,7 +143,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ACPGriffonSampleTests" */;
 			buildPhases = (
-				49F8981F0A8C455DB639A2EA /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -198,7 +161,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ACPGriffonSample" */;
 			buildPhases = (
-				8485E5C23A0017C5F7EEE82C /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -284,50 +246,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		49F8981F0A8C455DB639A2EA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ACPGriffonSample-ACPGriffonSampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8485E5C23A0017C5F7EEE82C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ACPGriffonSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,7 +310,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1348800BF9939799E4EE8F7A /* Pods-ACPGriffonSample-ACPGriffonSampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -415,7 +332,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9CE00CB19DB0A101C3B24A7 /* Pods-ACPGriffonSample-ACPGriffonSampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -435,7 +351,6 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10C73AE70A5AD7EDB7647745 /* Pods-ACPGriffonSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -532,7 +447,6 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B162BAA4F62C2A961DC4412C /* Pods-ACPGriffonSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
