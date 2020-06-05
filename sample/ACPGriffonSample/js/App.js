@@ -21,7 +21,7 @@ export default class App extends Component {
   };
 
   startGriffonSession = () => {
-    ACPGriffon.startSession("grifflab://shtomar-griffon?adb_validation_sessionid=a7cad5ab-d8df-4883-9bd4-42dc5725e228");
+    ACPGriffon.startSession("grifflab://your-griffon-url");
   };
 
   getVersion = () => {
