@@ -11,13 +11,8 @@ governing permissions and limitations under the License.
 
 import React, { Component } from 'react';
 
-const RNACPCore = require('@adobe/react-native-acpcore'); 
-const ACPCore = RNACPCore.ACPCore;
-// import { ACPGriffon } from '@adobe/react-native-acpgriffon';
-// const RNACPGriffon = require('@adobe/react-native-acpgriffon'); 
-// const ACPGriffon = RNACPGriffon.ACPGriffon;
-
 import { StyleSheet, View, Text, Alert, ImageBackground } from 'react-native';
+import { ACPGriffon } from '@adobe/react-native-acpgriffon';
 
 export default class App extends Component {
   state = {
@@ -25,23 +20,15 @@ export default class App extends Component {
      version: ""
   };
 
-  componentDidMount() {}
-
   startGriffonSession = () => {
-    const ACPGriffon = require('@adobe/react-native-acpgriffon').ACPGriffon; 
-    if(ACPGriffon){     
-      ACPGriffon.startSession("grifflab://shtomar-griffon?adb_validation_sessionid=a7cad5ab-d8df-4883-9bd4-42dc5725e228");
-    }
+    ACPGriffon.startSession("grifflab://shtomar-griffon?adb_validation_sessionid=a7cad5ab-d8df-4883-9bd4-42dc5725e228");
   };
 
   getVersion = () => {
-    const ACPGriffon = require('@adobe/react-native-acpgriffon').ACPGriffon; 
-    if(ACPGriffon){
-         ACPGriffon.extensionVersion().then((version) => {
-           Alert.alert(`Version:: ${version}`);
+    ACPGriffon.extensionVersion().then((version) => {
+        Alert.alert(`Version:: ${version}`);
            this.setState(() => ({version}));
-         });   
-     }
+    });      
   };
     
   render() {

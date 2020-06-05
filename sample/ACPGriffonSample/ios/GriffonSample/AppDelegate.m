@@ -14,7 +14,7 @@ governing permissions and limitations under the License.
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <ACPCore.h>
-#import <ACPGriffon.h>
+#import <RCTACPGriffon/ACPGriffon.h>
 
 #if DEBUG
 #import <FlipperKit/FlipperClient.h>
@@ -57,7 +57,7 @@ static void InitializeFlipper(UIApplication *application) {
   [self.window makeKeyAndVisible];
   
   //Register ACP Core and Griffon Extensions.
-  [ACPCore configureWithAppId:@"94f571f308d5/e30a9514788b/launch-44fec1a705f1-development"];
+  [ACPCore configureWithAppId:@"your-app-id"];
   [ACPGriffon registerExtension];
   [ACPCore start:nil];
   

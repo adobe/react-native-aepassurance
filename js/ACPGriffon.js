@@ -10,13 +10,12 @@ governing permissions and limitations under the License.
 */
 
 import { NativeModules } from 'react-native';
-const ACPGriffon = NativeModules.ACPGriffon;
 
 export default {
     startSession : (url) => {
-        ACPGriffon.startSession(url);
+        NativeModules.ACPGriffon.startSession(url);
     },
     extensionVersion : () => {
-        return Promise.resolve(ACPGriffon.getExtensionVersion());
+        return Promise.resolve(NativeModules.ACPGriffon.getExtensionVersion());
     }
 };
