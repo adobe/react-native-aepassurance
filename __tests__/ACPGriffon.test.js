@@ -16,7 +16,7 @@ describe('ACPGriffon', () => {
     test('Test Extension version',  () => {
     
     const spy = jest.spyOn(NativeModules.ACPGriffon, 'getExtensionVersion');
-    ACPGriffon.getVersion();
+    ACPGriffon.extensionVersion();
     expect(spy).toHaveBeenCalled();
 });
 
