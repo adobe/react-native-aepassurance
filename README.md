@@ -95,7 +95,7 @@ ACPGriffon.registerExtension();
 
 ```javascript
 import {ACPGriffon} from '@adobe/react-native-acpgriffon';
-ACPGriffon.startSession("grifflab://you-griffon-session-url");
+ACPGriffon.startSession("{your-griffon-session-url}");
 ```
 
 ## Contributing
