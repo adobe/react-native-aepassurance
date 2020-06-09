@@ -50,7 +50,7 @@ jobs:
       - checkout
 
       - run: npm install
-      - run: npm install jest@24.8.0 -g
+      - run: npm install jest@26.0.1 -g
 
       - run:
           name: Unit Tests
