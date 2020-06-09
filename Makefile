@@ -22,7 +22,7 @@ build-sample-ios:
 	(cd sample/ACP*Sample/ios && xcodebuild build -project ${PROJECT_NAME}Sample.xcodeproj -scheme ${PROJECT_NAME}Sample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
 
 run-tests:
-	npm test
+	jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand
 
 run-tests-locally: setup
 	./node_modules/.bin/jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/

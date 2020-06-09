@@ -6,7 +6,7 @@
   "main": "./js/index.js",
   "scripts": {
     "test": "jest",
-    "prepublishOnly": "cd ios && pod deintegrate"
+    "prepublishOnly": "cd ios && pod deintegrate && cd ../"
   },
   "repository": {
     "type": "git",
@@ -48,9 +48,6 @@
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",
       "<rootDir>/sample/"
-    ],
-    "globals": {
-      "__DEV__": true
-    }
+    ]
   }
 }
