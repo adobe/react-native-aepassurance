@@ -13,13 +13,13 @@ build-android:
 	(cd android && ./gradlew build -x lint)
 
 build-ios: setup
-	(cd ios && xcodebuild build -workspace RCT${PROJECT_NAME}.xcworkspace -scheme RCT${PROJECT_NAME})
+	(cd ios && xcodebuild build -workspace RCT${PROJECT_NAME}.xcworkspace -scheme RCT${PROJECT_NAME} -UseModernBuildSystem=N)
 
 build-sample-android:
 	(cd sample/ACP*Sample/android && ./gradlew assembleRelease)
 
 build-sample-ios:
-	(cd sample/ACP*Sample/ios && xcodebuild build -project ${PROJECT_NAME}Sample.xcodeproj -scheme ${PROJECT_NAME}Sample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
+	(cd sample/ACP*Sample/ios && pod install && xcodebuild build -project ${PROJECT_NAME}Sample.xcodeproj -scheme ${PROJECT_NAME}Sample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
 
 run-tests:
 	./node_modules/.bin/jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand
