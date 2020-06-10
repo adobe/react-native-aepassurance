@@ -16,8 +16,6 @@ const watchFolders = [
   path.resolve(__dirname + '/../../')
 ];
 
-
-
 module.exports = {
   transformer: {
     getTransformOptions: async () => ({
@@ -26,10 +24,10 @@ module.exports = {
         inlineRequires: false,
       },
     }),
-  }
-  ,
+  },
   resolver: {
     extraNodeModules,
   },
-  watchFolders
+  watchFolders,
+  maxWorkers: 2,
 };

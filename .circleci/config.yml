@@ -53,7 +53,7 @@ jobs:
 
   build-sample-app-android:
     docker:
-      - image: circleci/android:api-29-node
+      - image: circleci/android:api-28-node
     steps:
       - checkout
 
