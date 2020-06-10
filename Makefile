@@ -16,7 +16,7 @@ build-ios: setup
 	(cd ios && xcodebuild build -workspace RCT${PROJECT_NAME}.xcworkspace -scheme RCT${PROJECT_NAME} -UseModernBuildSystem=N)
 
 build-sample-android:
-	(cd sample/ACP*Sample/android && ./gradlew assembleRelease --scan)
+	(cd sample/ACP*Sample/android && ./gradlew assembleRelease --debug)
 
 build-sample-ios:
 	(cd sample/ACP*Sample/ios && pod install && xcodebuild build -project ${PROJECT_NAME}Sample.xcodeproj -scheme ${PROJECT_NAME}Sample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
