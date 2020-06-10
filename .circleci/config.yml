@@ -17,9 +17,7 @@ jobs:
 
     steps:
       - checkout
-
       - run: npm install
-
       # restore pods related caches
       - restore_cache:
           keys:
@@ -43,19 +41,15 @@ jobs:
           command: make build-ios
 
   unit-test:
-    macos:
-      xcode: "10.0"
+    docker:
+      - image: circleci/node
 
     steps:
       - checkout
-
       - run: npm install
-      - run: npm install jest@26.0.1 -g
-
       - run:
           name: Unit Tests
           command: make run-tests
-
 
   build-sample-app-android:
     docker:
@@ -67,6 +61,7 @@ jobs:
           name: Install react-native-cli
           command: sudo npm install -g react-native-cli
 
+      - run: npm install  
       - run:
           name: Copy changes into sample app
           command: make copy-to-sample
