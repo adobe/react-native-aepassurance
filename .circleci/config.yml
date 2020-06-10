@@ -61,7 +61,7 @@ jobs:
           name: Install react-native-cli
           command: sudo npm install -g react-native-cli
 
-      - run: npm install  
+      
       - run:
           name: Copy changes into sample app
           command: make copy-to-sample

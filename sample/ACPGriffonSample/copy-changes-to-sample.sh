@@ -7,7 +7,7 @@ echo 'Installing npm packages'
 npm install
 
 # echo 'Unlinking React Native Module'
-/react-native unlink @adobe/$EXTENSION_NAME
+# /react-native unlink @adobe/$EXTENSION_NAME
 
 echo 'Copying React Native Module into Sample App'
 rm -r node_modules/@adobe/$EXTENSION_NAME
