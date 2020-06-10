@@ -13,7 +13,7 @@ jobs:
 
   build-ios:
     macos:
-      xcode: "10.0"
+      xcode: "11.3"
 
     steps:
       - checkout
@@ -53,7 +53,7 @@ jobs:
 
   build-sample-app-android:
     docker:
-      - image: circleci/android:api-28-node
+      - image: circleci/android:api-29-node
     steps:
       - checkout
 
@@ -73,7 +73,7 @@ jobs:
 
   build-sample-app-ios:
     macos:
-      xcode: "10.0"
+      xcode: "11.3"
 
     steps:
       - checkout
