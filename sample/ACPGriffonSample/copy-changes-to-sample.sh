@@ -6,8 +6,8 @@ EXTENSION_NAME=react-native-acpgriffon
 echo 'Installing npm packages'
 npm install
 
-echo 'Unlinking React Native Module'
-react-native unlink @adobe/$EXTENSION_NAME
+# echo 'Unlinking React Native Module'
+/react-native unlink @adobe/$EXTENSION_NAME
 
 echo 'Copying React Native Module into Sample App'
 rm -r node_modules/@adobe/$EXTENSION_NAME
@@ -20,5 +20,5 @@ rm node_modules/@adobe/*.tgz
 rm -r node_modules/@adobe/$EXTENSION_NAME
 mv node_modules/@adobe/package node_modules/@adobe/$EXTENSION_NAME
 
-echo 'Linking'
-react-native link
+# echo 'Linking'
+# react-native link
