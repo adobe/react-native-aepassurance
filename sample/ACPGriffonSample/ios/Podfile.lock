@@ -326,7 +326,7 @@ DEPENDENCIES:
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - "RCTACPCore (from `../node_modules/@adobe/react-native-acpcore`)"
-  - "RCTACPGriffon (from `../node_modules/@adobe/react-native-acpgriffon`)"
+  - RCTACPGriffon (from `../../..`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -380,7 +380,7 @@ EXTERNAL SOURCES:
   RCTACPCore:
     :path: "../node_modules/@adobe/react-native-acpcore"
   RCTACPGriffon:
-    :path: "../node_modules/@adobe/react-native-acpgriffon"
+    :path: "../../.."
   RCTRequired:
     :path: "../node_modules/react-native/Libraries/RCTRequired"
   RCTTypeSafety:
@@ -440,7 +440,7 @@ SPEC CHECKSUMS:
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
   OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
   RCTACPCore: 6e52fa0b83f5064b6a435c73268184fb94393708
-  RCTACPGriffon: d3d717b416dc89d2b342ccd7dd3bae3dc7e97d04
+  RCTACPGriffon: acda565c31b30460054f8e53ccafc83795a06d1e
   RCTRequired: cec6a34b3ac8a9915c37e7e4ad3aa74726ce4035
   RCTTypeSafety: 93006131180074cffa227a1075802c89a49dd4ce
   React: 29a8b1a02bd764fb7644ef04019270849b9a7ac3

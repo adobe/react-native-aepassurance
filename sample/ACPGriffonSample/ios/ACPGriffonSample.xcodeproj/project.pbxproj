@@ -113,7 +113,6 @@
 				00E356EF1AD99517003FC87E /* GriffonSampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				D5CF8E6FBB8C6C1D019200C2 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -126,14 +125,7 @@
 				13B07F961A680F5B00A75B9A /* ACPGriffonSample.app */,
 				00E356EE1AD99517003FC87E /* ACPGriffonSampleTests.xctest */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D5CF8E6FBB8C6C1D019200C2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
+			`roducts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
