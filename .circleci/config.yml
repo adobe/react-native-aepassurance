@@ -82,6 +82,7 @@ jobs:
           name: Install react-native-cli
           command: npm install -g react-native-cli
 
+      - run: npm install  
       - run:
           name: Copy changes into sample app
           command: make copy-to-sample
@@ -94,8 +95,4 @@ workflows:
   version: 2
   ci-workflow:
     jobs:
-      - build-android
-      - build-ios
-      - unit-test
-      - build-sample-app-android
       - build-sample-app-ios
