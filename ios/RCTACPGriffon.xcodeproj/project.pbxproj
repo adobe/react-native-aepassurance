@@ -11,6 +11,7 @@
 		3D83B4C72484CE66007E783A /* RCTACPGriffon.h in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B4C42484CC48007E783A /* RCTACPGriffon.h */; };
 		3D83B4CB248F0435007E783A /* ACPGriffon.h in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B4CA248F0435007E783A /* ACPGriffon.h */; };
 		3D83B4CD248F0456007E783A /* libACPGriffon_iOS.a in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B4CC248F0456007E783A /* libACPGriffon_iOS.a */; };
+		C791DB6637872B606157CC70 /* libPods-RCTACPGriffon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B47DB87CF4EEE5EEBD89A /* libPods-RCTACPGriffon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,9 @@
 		3D83B4C52484CC48007E783A /* RCTACPGriffon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTACPGriffon.m; sourceTree = "<group>"; };
 		3D83B4CA248F0435007E783A /* ACPGriffon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ACPGriffon.h; path = libs/include/ACPGriffon.h; sourceTree = "<group>"; };
 		3D83B4CC248F0456007E783A /* libACPGriffon_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libACPGriffon_iOS.a; path = libs/libACPGriffon_iOS.a; sourceTree = "<group>"; };
+		657171CF631BAE07BA630A60 /* Pods-RCTACPGriffon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTACPGriffon.debug.xcconfig"; path = "Target Support Files/Pods-RCTACPGriffon/Pods-RCTACPGriffon.debug.xcconfig"; sourceTree = "<group>"; };
+		77E942C39E253ACAEE508C38 /* Pods-RCTACPGriffon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTACPGriffon.release.xcconfig"; path = "Target Support Files/Pods-RCTACPGriffon/Pods-RCTACPGriffon.release.xcconfig"; sourceTree = "<group>"; };
+		B27B47DB87CF4EEE5EEBD89A /* libPods-RCTACPGriffon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCTACPGriffon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C791DB6637872B606157CC70 /* libPods-RCTACPGriffon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +74,23 @@
 				3D83B4C32484CC47007E783A /* src */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				BFD6951DDA7DCA909FD456A9 /* Pods */,
+				AD7727D77061C94E76EC830C /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		AD7727D77061C94E76EC830C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B27B47DB87CF4EEE5EEBD89A /* libPods-RCTACPGriffon.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BFD6951DDA7DCA909FD456A9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				657171CF631BAE07BA630A60 /* Pods-RCTACPGriffon.debug.xcconfig */,
+				77E942C39E253ACAEE508C38 /* Pods-RCTACPGriffon.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -86,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RCTACPGriffon" */;
 			buildPhases = (
+				16D3CBB2C3767F1892C66904 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -130,6 +147,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16D3CBB2C3767F1892C66904 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RCTACPGriffon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -247,6 +289,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657171CF631BAE07BA630A60 /* Pods-RCTACPGriffon.debug.xcconfig */;
 			buildSettings = {
 				GCC_INPUT_FILETYPE = automatic;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -264,6 +307,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E942C39E253ACAEE508C38 /* Pods-RCTACPGriffon.release.xcconfig */;
 			buildSettings = {
 				GCC_INPUT_FILETYPE = automatic;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
