@@ -16,7 +16,7 @@ build-ios: setup
 	(cd ios && xcodebuild build -workspace RCT${PROJECT_NAME}.xcworkspace -scheme RCT${PROJECT_NAME})
 
 build-sample-android:
-	(cd sample/ACP*Sample/android && ./gradlew assembleRelease --debug)
+	(cd sample/ACP*Sample/android && ./gradlew assembleRelease)
 
 build-sample-ios:
 	(cd sample/ACP*Sample/ios && xcodebuild build -project ACPGriffonSample.xcodeproj -scheme ACPGriffonSample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
