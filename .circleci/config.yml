@@ -96,3 +96,6 @@ workflows:
     jobs:
       - build-sample-app-android
       - build-sample-app-ios
+      - build-android
+      - build-ios
+      - unit-test
