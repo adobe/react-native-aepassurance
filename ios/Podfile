@@ -8,7 +8,7 @@ target 'RCTACPGriffon' do
   # Pods for RCTACPReactNativeAcpGriffon
   react_native_path = "../node_modules/react-native"
 
-  pod "React-Core", :path => "#{react_native_path}/"
+  pod "React-Core", :path => "#{react_native_path}/React"
   pod "React-cxxreact", :path => "#{react_native_path}/ReactCommon/cxxreact"
   pod "React-jsi", :path => "#{react_native_path}/ReactCommon/jsi"
   pod "React-jsiexecutor", :path => "#{react_native_path}/ReactCommon/jsiexecutor"
@@ -16,7 +16,7 @@ target 'RCTACPGriffon' do
 
 
   pod 'DoubleConversion', :podspec => "#{react_native_path}/third-party-podspecs/DoubleConversion.podspec"
-  pod "Yoga", :path => "#{react_native_path}/ReactCommon/yoga", :modular_headers => true
+  pod "yoga", :path => "#{react_native_path}/ReactCommon/yoga"
   pod "Folly", :podspec => "#{react_native_path}/third-party-podspecs/Folly.podspec"
 
 

@@ -19,7 +19,7 @@ build-sample-android:
 	(cd sample/ACP*Sample/android && ./gradlew assembleRelease --debug)
 
 build-sample-ios:
-	(cd sample/ACP*Sample/ios && pod install && xcodebuild build -project ${PROJECT_NAME}Sample.xcodeproj -scheme ${PROJECT_NAME}Sample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
+	(cd sample/ACP*Sample/ios && xcodebuild build -project ACPGriffonSample.xcodeproj -scheme ACPGriffonSample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
 
 run-tests:
 	./node_modules/.bin/jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand

@@ -9,12 +9,12 @@ const path = require('path');
 
 // react-native >= 0.57
 
-const extraNodeModules = {
-  '@adobe/react-native-acpgriffon': path.resolve(__dirname + '/../../'),
-};
-const watchFolders = [
-  path.resolve(__dirname + '/../../')
-];
+// const extraNodeModules = {
+//   '@adobe/react-native-acpgriffon': path.resolve(__dirname + '/../../'),
+// };
+// const watchFolders = [
+//   path.resolve(__dirname + '/../../')
+// ];
 
 module.exports = {
   transformer: {
@@ -25,9 +25,9 @@ module.exports = {
       },
     }),
   },
-  resolver: {
-    extraNodeModules,
-  },
-  watchFolders,
+  // resolver: {
+  //   extraNodeModules,
+  // },
+  // watchFolders,
   maxWorkers: 2,
 };
