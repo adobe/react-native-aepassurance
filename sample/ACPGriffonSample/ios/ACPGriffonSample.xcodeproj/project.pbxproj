@@ -25,6 +25,7 @@
 		3D910ADA249213B100E961A4 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D91098E2491F09900E961A4 /* libReact.a */; };
 		3D910B1E2492797F00E961A4 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9109762491F06900E961A4 /* libRCTSettings.a */; };
 		3D910B2F24928BC600E961A4 /* libRCTACPGriffon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D910B2E24928ACC00E961A4 /* libRCTACPGriffon.a */; };
+		3D910BA924931BB400E961A4 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D910B8124931BB400E961A4 /* UserNotifications.framework */; };
 		3DD9A0AD2491B6130082D2FA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD9A0AC2491B6130082D2FA /* WebKit.framework */; };
 		3DD9A0AF2491B61D0082D2FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD9A0AE2491B61D0082D2FA /* SystemConfiguration.framework */; };
 		3DD9A0B12491B62A0082D2FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD9A0B02491B62A0082D2FA /* UIKit.framework */; };
@@ -343,6 +344,7 @@
 		3D9109702491F06900E961A4 /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		3D91097A2491F09900E961A4 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		3D910B2924928ACC00E961A4 /* RCTACPGriffon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTACPGriffon.xcodeproj; path = "../node_modules/@adobe/react-native-acpgriffon/ios/RCTACPGriffon.xcodeproj"; sourceTree = "<group>"; };
+		3D910B8124931BB400E961A4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		3DD9A0AC2491B6130082D2FA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3DD9A0AE2491B61D0082D2FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3DD9A0B02491B62A0082D2FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -368,6 +370,7 @@
 				3DD9A0B42491B6410082D2FA /* libz.tbd in Frameworks */,
 				3DD9A0B62491B64E0082D2FA /* libc++.tbd in Frameworks */,
 				3DD9A0B82491B65F0082D2FA /* libsqlite3.0.tbd in Frameworks */,
+				3D910BA924931BB400E961A4 /* UserNotifications.framework in Frameworks */,
 				3DD9A0AD2491B6130082D2FA /* WebKit.framework in Frameworks */,
 				3DD9A0AF2491B61D0082D2FA /* SystemConfiguration.framework in Frameworks */,
 				3DD9A0B12491B62A0082D2FA /* UIKit.framework in Frameworks */,
@@ -425,6 +428,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D910B8124931BB400E961A4 /* UserNotifications.framework */,
 				3D910B2924928ACC00E961A4 /* RCTACPGriffon.xcodeproj */,
 				3D91097A2491F09900E961A4 /* React.xcodeproj */,
 				3D9109702491F06900E961A4 /* RCTSettings.xcodeproj */,
@@ -643,7 +647,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ACPGriffonSample" */;
 			buildPhases = (
-				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
