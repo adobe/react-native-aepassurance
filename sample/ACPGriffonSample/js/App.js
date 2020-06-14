@@ -21,7 +21,7 @@ export default class App extends Component {
   };
 
   startGriffonSession = () => {
-    ACPGriffon.startSession("grifflab://your-griffon-url");
+    ACPGriffon.startSession("your-griffon-session-url");
   };
 
   getVersion = () => {

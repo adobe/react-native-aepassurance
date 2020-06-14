@@ -8,14 +8,15 @@ Pod::Spec.new do |s|
   s.author       = "Adobe Mobile SDK Team"
   s.homepage     = "https://github.com/adobe/react-native-acpgriffon"
   s.license      = "Apache 2.0 License"
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, '10.0'
   
   s.source       = { :git => "https://github.com/adobe/react-native-acpgriffon", :tag => "#{s.version}" }
-  s.source_files  = 'ios/src/**/*.{h,m}','ios/libs/**/*.{h,m}'
+  s.source_files  = "ios/**/*.{h,m}"
   s.requires_arc = true
 
   s.dependency "React"
   s.frameworks = 'UIKit', 'SystemConfiguration', 'WebKit'
+  s.library = 'sqlite3.0', 'c++', 'z'
   s.vendored_libraries = 'ios/libs/libACPGriffon_iOS.a'
 
 end

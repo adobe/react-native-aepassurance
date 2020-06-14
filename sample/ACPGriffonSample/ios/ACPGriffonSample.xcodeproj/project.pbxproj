@@ -24,8 +24,8 @@
 		3D910AD9249213A700E961A4 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D91093C2491BD5400E961A4 /* libRCTWebSocket.a */; };
 		3D910ADA249213B100E961A4 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D91098E2491F09900E961A4 /* libReact.a */; };
 		3D910B1E2492797F00E961A4 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9109762491F06900E961A4 /* libRCTSettings.a */; };
-		3D910B2F24928BC600E961A4 /* libRCTACPGriffon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D910B2E24928ACC00E961A4 /* libRCTACPGriffon.a */; };
 		3D910BA924931BB400E961A4 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D910B8124931BB400E961A4 /* UserNotifications.framework */; };
+		3DD741E724946112007C10A9 /* libRCTACPGriffon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D910B2E24928ACC00E961A4 /* libRCTACPGriffon.a */; };
 		3DD9A0AD2491B6130082D2FA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD9A0AC2491B6130082D2FA /* WebKit.framework */; };
 		3DD9A0AF2491B61D0082D2FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD9A0AE2491B61D0082D2FA /* SystemConfiguration.framework */; };
 		3DD9A0B12491B62A0082D2FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD9A0B02491B62A0082D2FA /* UIKit.framework */; };
@@ -387,7 +387,7 @@
 				3D910AD82492139F00E961A4 /* libRCTVibration.a in Frameworks */,
 				3D910AD9249213A700E961A4 /* libRCTWebSocket.a in Frameworks */,
 				3D910ACE2492130900E961A4 /* libRCTACPCore.a in Frameworks */,
-				3D910B2F24928BC600E961A4 /* libRCTACPGriffon.a in Frameworks */,
+				3DD741E724946112007C10A9 /* libRCTACPGriffon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1184,11 +1184,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@adobe/react-native-acpgriffon/ios/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpgriffon/ios/src/**",
 				);
 				INFOPLIST_FILE = GriffonSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1212,11 +1211,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../node_modules/@adobe/react-native-acpcore/ios/src/**",
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@adobe/react-native-acpgriffon/ios/**",
+					"$(SRCROOT)/../node_modules/@adobe/react-native-acpgriffon/ios/src/**",
 				);
 				INFOPLIST_FILE = GriffonSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

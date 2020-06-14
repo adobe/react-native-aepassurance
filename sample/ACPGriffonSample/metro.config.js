@@ -5,7 +5,7 @@
  * @format
  */
 
-const path = require('path');
+// const path = require('path');
 
 // react-native >= 0.57
 
@@ -24,10 +24,10 @@ module.exports = {
         inlineRequires: false,
       },
     }),
-  },
+  }
+  // ,
   // resolver: {
   //   extraNodeModules,
   // },
-  // watchFolders,
-  maxWorkers: 2,
+  // watchFolders
 };

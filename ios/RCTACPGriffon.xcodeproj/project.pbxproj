@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D83B4C62484CC48007E783A /* RCTACPGriffon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B4C52484CC48007E783A /* RCTACPGriffon.m */; };
 		3D83B4DC2491781A007E783A /* libACPGriffon_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D83B4CC248F0456007E783A /* libACPGriffon_iOS.a */; };
 		3D83B4E0249178DE007E783A /* ACPGriffon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D83B4DF249178DE007E783A /* ACPGriffon.h */; };
+		3DD7421324958185007C10A9 /* RCTACPGriffon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7421224958185007C10A9 /* RCTACPGriffon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +27,10 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRCTACPGriffon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTACPGriffon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D83B4C42484CC48007E783A /* RCTACPGriffon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTACPGriffon.h; sourceTree = "<group>"; };
-		3D83B4C52484CC48007E783A /* RCTACPGriffon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTACPGriffon.m; sourceTree = "<group>"; };
 		3D83B4CC248F0456007E783A /* libACPGriffon_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libACPGriffon_iOS.a; path = libs/libACPGriffon_iOS.a; sourceTree = "<group>"; };
 		3D83B4DF249178DE007E783A /* ACPGriffon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ACPGriffon.h; path = libs/include/ACPGriffon.h; sourceTree = "<group>"; };
+		3DD7421124958185007C10A9 /* RCTACPGriffon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTACPGriffon.h; path = src/RCTACPGriffon.h; sourceTree = "<group>"; };
+		3DD7421224958185007C10A9 /* RCTACPGriffon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTACPGriffon.m; path = src/RCTACPGriffon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,39 +53,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D83B4C32484CC47007E783A /* src */ = {
-			isa = PBXGroup;
-			children = (
-				3D83B4C42484CC48007E783A /* RCTACPGriffon.h */,
-				3D83B4C52484CC48007E783A /* RCTACPGriffon.m */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				3DD7421124958185007C10A9 /* RCTACPGriffon.h */,
+				3DD7421224958185007C10A9 /* RCTACPGriffon.m */,
 				3D83B4DF249178DE007E783A /* ACPGriffon.h */,
 				3D83B4CC248F0456007E783A /* libACPGriffon_iOS.a */,
-				3D83B4C32484CC47007E783A /* src */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		60CAB69ABD3B2F8184815C5C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E9B569EFE76E98326B8E3E3E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +71,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RCTACPGriffon" */;
 			buildPhases = (
-				C361D370BD04D838B7EA5078 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -146,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D83B4C62484CC48007E783A /* RCTACPGriffon.m in Sources */,
+				3DD7421324958185007C10A9 /* RCTACPGriffon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +177,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -249,7 +224,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
