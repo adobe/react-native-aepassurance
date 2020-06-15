@@ -112,7 +112,9 @@ ACPGriffon.startSession("{your-griffon-session-url}");
  | Places | [![npm version](https://img.shields.io/npm/v/@adobe/react-native-acpplaces.svg?color=green&label=%40adobe%2Freact-native-acpplaces&logo=npm&style=flat-square)](https://www.npmjs.com/package/@adobe/react-native-acpplaces) |
 
 ## Contributing
-See [CONTRIBUTING](CONTRIBUTING.md)
+Looking to contribute to this project? Please review our [Contributing guidelines](.github/CONTRIBUTING.md) prior to opening a pull request.
 
-## License
-See [LICENSE](LICENSE)
+We look forward to working with you!
+
+## Licensing  
+This project is licensed under the Apache V2 License. See [LICENSE](LICENSE) for more information.

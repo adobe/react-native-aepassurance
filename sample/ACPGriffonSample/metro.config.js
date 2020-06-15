@@ -4,18 +4,6 @@
  *
  * @format
  */
-
-// const path = require('path');
-
-// react-native >= 0.57
-
-// const extraNodeModules = {
-//   '@adobe/react-native-acpgriffon': path.resolve(__dirname + '/../../'),
-// };
-// const watchFolders = [
-//   path.resolve(__dirname + '/../../')
-// ];
-
 module.exports = {
   transformer: {
     getTransformOptions: async () => ({
@@ -24,10 +12,6 @@ module.exports = {
         inlineRequires: false,
       },
     }),
-  }
-  // ,
-  // resolver: {
-  //   extraNodeModules,
-  // },
-  // watchFolders
-};
+  },
+  maxWorkers: 2
+  };
