@@ -1,0 +1,37 @@
+{
+  "name": "GriffonSample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start --reset-cache",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "@adobe/react-native-acpcore": ">=1.0.0"
+  },
+  "dependencies": {
+    "@adobe/react-native-acpcore": "1.2.3",
+    "@adobe/react-native-acpgriffon": "file:./../../adobe-react-native-acpgriffon-0.1.1.tgz",
+    "@babel/runtime": "^7.10.2",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-module-resolver": "^3.1.3",
+    "babel-preset-react-native": "2.1.0",
+    "react": "16.6.3",
+    "react-native": "0.59.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.0",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^26.0.1",
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1",
+    "metro-react-native-babel-preset": "^0.59.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
