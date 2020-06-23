@@ -85,12 +85,6 @@ import com.adobe.marketing.mobile.Griffon;
 Griffon.registerExtension();
 ```
 
-###### **Javascript:**
-```javascript
-import {ACPGriffon} from '@adobe/react-native-acpgriffon';
-ACPGriffon.registerExtension();
-```
-
 ##### Start Griffon session:
 
 ```javascript
