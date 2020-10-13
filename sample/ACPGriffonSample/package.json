@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@adobe/react-native-acpcore": "1.2.3",
-    "@adobe/react-native-acpgriffon": "file:./../../adobe-react-native-acpgriffon-0.1.1.tgz",
+    "@adobe/react-native-acpgriffon": "file:./../../adobe-react-native-acpgriffon-0.1.2.tgz",
     "@babel/runtime": "^7.10.2",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.2",
