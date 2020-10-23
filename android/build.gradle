@@ -36,6 +36,5 @@ repositories {
 dependencies {
     implementation files('libs/aepcorebridge.aar')
     implementation 'com.facebook.react:react-native:+'
-    api 'com.adobe.marketing.mobile:griffon:1.2.1'
+    api 'com.adobe.marketing.mobile:assurance:1.0.0'
 }
-  

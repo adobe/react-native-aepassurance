@@ -1,8 +1,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.adobe.marketing.mobile.reactnative.griffon">
+          package="com.adobe.marketing.mobile.reactnative.assurance">
     <application>
-        <activity android:name="com.adobe.marketing.mobile.GriffonFullScreenTakeoverActivity"/>
+        <activity android:name="com.adobe.marketing.mobile.AssuranceFullScreenTakeoverActivity"/>
     </application>
 </manifest>
   

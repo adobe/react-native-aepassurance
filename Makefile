@@ -1,4 +1,4 @@
-PROJECT_NAME = ACPGriffon
+PROJECT_NAME = AEPAssurance
 
 setup:
 	(npm install)
@@ -16,10 +16,10 @@ build-ios: setup
 	(cd ios && xcodebuild build -workspace RCT${PROJECT_NAME}.xcworkspace -scheme RCT${PROJECT_NAME})
 
 build-sample-android:
-	(cd sample/ACP*Sample/android && ./gradlew assembleRelease)
+	(cd sample/AEP*Sample/android && ./gradlew assembleRelease)
 
 build-sample-ios:
-	(cd sample/ACP*Sample/ios && xcodebuild build -project ACPGriffonSample.xcodeproj -scheme ACPGriffonSample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
+	(cd sample/AEP*Sample/ios && xcodebuild build -project AEPAssuranceSample.xcodeproj -scheme AEPAssuranceSample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
 
 run-tests:
 	./node_modules/.bin/jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand
