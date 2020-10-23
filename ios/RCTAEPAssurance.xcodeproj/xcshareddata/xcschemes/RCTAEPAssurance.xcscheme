@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58B511DA1A9E6C8500147676"
-               BuildableName = "libRCTACPAssurance.a"
-               BlueprintName = "RCTACPAssurance"
-               ReferencedContainer = "container:RCTACPAssurance.xcodeproj">
+               BuildableName = "libRCTAEPAssurance.a"
+               BlueprintName = "RCTAEPAssurance"
+               ReferencedContainer = "container:RCTAEPAssurance.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58B511DA1A9E6C8500147676"
-            BuildableName = "libRCTACPAssurance.a"
-            BlueprintName = "RCTACPAssurance"
-            ReferencedContainer = "container:RCTACPAssurance.xcodeproj">
+            BuildableName = "libRCTAEPAssurance.a"
+            BlueprintName = "RCTAEPAssurance"
+            ReferencedContainer = "container:RCTAEPAssurance.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
