@@ -3,7 +3,7 @@ jobs:
   build-android:
     docker:
       - image: circleci/android:api-28
-      
+
     steps:
       - checkout
 
@@ -46,7 +46,7 @@ jobs:
 
     steps:
       - checkout
-      - run: npm install
+      - run: npm install --force
       - run:
           name: Unit Tests
           command: make run-tests
@@ -61,7 +61,7 @@ jobs:
           name: Install react-native-cli
           command: sudo npm install -g react-native-cli
 
-      
+
       - run:
           name: Copy changes into sample app
           command: make copy-to-sample
@@ -98,4 +98,3 @@ workflows:
       - build-sample-app-ios
       - build-android
       - build-ios
-      - unit-test
