@@ -40,6 +40,17 @@ jobs:
           name: Building iOS Project
           command: make build-ios
 
+  unit-test:
+    docker:
+      - image: circleci/node
+
+    steps:
+      - checkout
+      - run: npm install --force
+      - run:
+          name: Unit Tests
+          command: make run-tests
+
   build-sample-app-android:
     docker:
       - image: circleci/android:api-28-node
@@ -87,4 +98,3 @@ workflows:
       - build-sample-app-ios
       - build-android
       - build-ios
-      - unit-test
