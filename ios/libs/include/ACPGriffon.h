@@ -4,11 +4,7 @@
 //
 //  Copyright 1996-2020. Adobe. All Rights Reserved
 //
-<<<<<<< HEAD
 //  ACPGriffon Version: 1.2.1
-=======
-//  ACPGriffon Version: 1.2.0
->>>>>>> e6f236c4321775b71b2af4f6e0880f244d9abd12
 
 #import <Foundation/Foundation.h>
 
