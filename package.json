@@ -1,6 +1,10 @@
 {
   "name": "@adobe/react-native-acpgriffon",
+<<<<<<< HEAD
   "version": "0.1.3",
+=======
+  "version": "0.1.2",
+>>>>>>> e6f236c4321775b71b2af4f6e0880f244d9abd12
   "description": "Adobe Experience Platform support for React Native apps.",
   "homepage": "https://aep-sdks.gitbook.io/docs/",
   "main": "./js/index.js",
