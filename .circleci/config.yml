@@ -17,7 +17,6 @@ jobs:
 
     steps:
       - checkout
-      - run: npm -v
       - run: npm install
       # restore pods related caches
       - restore_cache:
@@ -47,7 +46,7 @@ jobs:
 
     steps:
       - checkout
-      - run: npm install
+      - run: npm install --force
       - run:
           name: Unit Tests
           command: make run-tests
