@@ -1,5 +1,9 @@
 # React Native AEP Assurance Extension
 
+[![npm version](https://badge.fury.io/js/%40adobe%2Freact-native-acpgriffon.svg)](https://www.npmjs.com/package/@adobe/react-native-acpgriffon) 
+[![npm downloads](https://img.shields.io/npm/dm/@adobe/react-native-acpgriffon)](https://www.npmjs.com/package/@adobe/react-native-acpgriffon)
+[![CircleCI](https://img.shields.io/circleci/project/github/adobe/react-native-acpgriffon/main.svg?logo=circleci)](https://circleci.com/gh/adobe/workflows/react-native-acpgriffon) 
+[![license](https://img.shields.io/npm/l/@adobe/react-native-acpgriffon.svg)](https://github.com/adobe/react-native-acpgriffon/blob/main/LICENSE)
 
 `@adobe/react-native-aepassurance` is a wrapper around the iOS and Android [AEPAssurance SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-experience-platform-assurance) to allow for integration with React Native applications. Functionality to start Assurance session is provided through JavaScript documented below.
 

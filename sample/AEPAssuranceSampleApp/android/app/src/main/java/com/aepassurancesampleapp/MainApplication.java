@@ -1,6 +1,8 @@
 package com.aepassurancesampleapp;
 
 import android.app.Application;
+import com.adobe.marketing.mobile.Assurance;
+import com.adobe.marketing.mobile.MobileCore;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
@@ -45,6 +47,16 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+      MobileCore.setApplication(this); // add this line
+      MobileCore.configureWithAppID("94f571f308d5/bda071acf896/launch-189f3f522ee2-development");
+
+      try {
+          Assurance.registerExtension();
+      } catch (Exception e) {
+          // handle exception
+      }
+
+      MobileCore.start(null);
   }
 
   /**

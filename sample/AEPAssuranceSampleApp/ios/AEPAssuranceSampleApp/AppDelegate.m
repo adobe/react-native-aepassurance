@@ -11,6 +11,8 @@
 #import <FlipperKitNetworkPlugin/FlipperKitNetworkPlugin.h>
 #import <SKIOSNetworkPlugin/SKIOSNetworkAdapter.h>
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
+#import <RCTACPCore/ACPCore.h>
+#import <RCTAEPAssurance/AEPAssurance.h>
 
 static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
@@ -43,6 +45,10 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  [ACPCore configureWithAppId:@"your-app-id"];
+  [AEPAssurance registerExtension];
+  [ACPCore start:nil];
   return YES;
 }
 

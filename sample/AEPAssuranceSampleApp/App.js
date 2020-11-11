@@ -9,11 +9,24 @@ OF ANY KIND, either express or implied. See the License for the specific languag
 governing permissions and limitations under the License.
 */
 
-//import React from 'react';
+// //import React from 'react';
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Alert, ImageBackground } from 'react-native';
+
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  Alert,
+  StatusBar,
+  ImageBackground
+} from 'react-native';
+
 import { AEPAssurance } from '@adobe/react-native-aepassurance';
-const bgimage = { uri: "https://reactjs.org/logo-og.png" };
+const bgimage = { uri: "images/griffon" };
+
+
 
 export default class App extends Component {
   state = {
@@ -34,7 +47,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <ImageBackground source={bgimage} style={styles.image}>
+      <ImageBackground source={bgimage} style={styles.image} imageStyle={{resizeMode: 'contain'}}>
       <Text style={styles.title}>AEP Assurance</Text>
       <View style={styles.container}>
         <Text style={styles.text} onPress={this.startGriffonSession}>Start Session</Text>
