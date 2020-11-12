@@ -16,10 +16,10 @@ build-ios: setup
 	(cd ios && xcodebuild build -workspace RCT${PROJECT_NAME}.xcworkspace -scheme RCT${PROJECT_NAME})
 
 build-sample-android:
-	(cd sample/AEP*Sample/android && ./gradlew assembleRelease)
+	(cd sample/AEP*SampleApp/android && ./gradlew assembleRelease)
 
 build-sample-ios:
-	(cd sample/AEP*Sample/ios && xcodebuild build -project AEPAssuranceSample.xcodeproj -scheme AEPAssuranceSample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
+	(cd sample/AEP*SampleApp/ios && pod install && xcodebuild build -workspace AEPAssuranceSampleApp.xcworkspace -scheme AEPAssuranceSampleApp CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
 
 run-tests:
 	./node_modules/.bin/jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand
