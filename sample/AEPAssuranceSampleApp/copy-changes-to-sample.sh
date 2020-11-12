@@ -13,7 +13,7 @@ echo 'Copying React Native Module into Sample App'
 rm -r node_modules/@adobe/$EXTENSION_NAME
 mkdir node_modules/@adobe/$EXTENSION_NAME
 cd ../.. && npm pack
-cd sample/ACP*Sample/
+cd sample/AEP*SampleApp/
 cp ../../*.tgz node_modules/@adobe/
 tar -xvzf node_modules/@adobe/*.tgz --directory=node_modules/@adobe/
 rm node_modules/@adobe/*.tgz
