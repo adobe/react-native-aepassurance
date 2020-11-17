@@ -1,6 +1,0 @@
-rootProject.name = 'ACPGriffonSample'
-include ':app'
-include ':@adobe_react-native-acpcore'
-project(':@adobe_react-native-acpcore').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpcore/android')
-include ':@adobe_react-native-acpgriffon'
-project(':@adobe_react-native-acpgriffon').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpgriffon/android')

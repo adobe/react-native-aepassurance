@@ -1,16 +1,16 @@
-# React Native AEP Griffon Extension
+# React Native AEP Assurance Extension
 
 [![npm version](https://badge.fury.io/js/%40adobe%2Freact-native-acpgriffon.svg)](https://www.npmjs.com/package/@adobe/react-native-acpgriffon) 
 [![npm downloads](https://img.shields.io/npm/dm/@adobe/react-native-acpgriffon)](https://www.npmjs.com/package/@adobe/react-native-acpgriffon)
 [![CircleCI](https://img.shields.io/circleci/project/github/adobe/react-native-acpgriffon/main.svg?logo=circleci)](https://circleci.com/gh/adobe/workflows/react-native-acpgriffon) 
 [![license](https://img.shields.io/npm/l/@adobe/react-native-acpgriffon.svg)](https://github.com/adobe/react-native-acpgriffon/blob/main/LICENSE)
 
-`@adobe/react-native-acpgriffon` is a wrapper around the iOS and Android [Project Griffon SDK](https://aep-sdks.gitbook.io/docs/beta/project-griffon) to allow for integration with React Native applications. Functionality to start Griffon session is provided through JavaScript documented below.
+`@adobe/react-native-aepassurance` is a wrapper around the iOS and Android [AEPAssurance SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-experience-platform-assurance) to allow for integration with React Native applications. Functionality to start Assurance session is provided through JavaScript documented below.
 
 
 ## Installation
 
-You need to install the SDK with [npm](https://www.npmjs.com/) and configure the native Android/iOS project in your react native project. Before installing the Griffon extension it is recommended to begin by installing the [Core extension](https://github.com/adobe/react-native-acpcore).
+You need to install the SDK with [npm](https://www.npmjs.com/) and configure the native Android/iOS project in your react native project. Before installing the Assurance extension it is recommended to begin by installing the [Core extension](https://github.com/adobe/react-native-acpcore).
 
 > Note: If you are new to React Native we suggest you follow the [React Native Getting Started](<https://facebook.github.io/react-native/docs/getting-started.html>) page before continuing.
 
@@ -24,11 +24,11 @@ react-native init MyReactApp
 
 ### 2. Install JavaScript packages
 
-Install and link the `@adobe/react-native-acpgriffon` package:
+Install and link the `@adobe/react-native-aepassurance` package:
 
 ```bash
 cd MyReactApp
-npm install @adobe/react-native-acpgriffon
+npm install @adobe/react-native-aepassurance
 ```
 
 #### 2.1 Link
@@ -42,7 +42,7 @@ npm install @adobe/react-native-acpgriffon
 
 
 ```bash
-react-native link @adobe/react-native-acpgriffon
+react-native link @adobe/react-native-aepassurance
 ```
 
 *Note* For `iOS` using `cocoapods`, run:
@@ -59,41 +59,41 @@ make run-tests-locally
 
 ## Usage
 
-### [Griffon](https://aep-sdks.gitbook.io/docs/beta/project-griffon/using-project-griffon)
+### [Assurance](https://aep-sdks.gitbook.io/docs/beta/project-griffon/using-project-griffon)
 
 ##### Importing the extension:
 ```javascript
-import {ACPGriffon} from '@adobe/react-native-acpgriffon';
+import {AEPAssurance} from '@adobe/react-native-aepassurance';
 ```
 
 ##### Getting the extension version:
 
 ```javascript
-ACPGriffon.getVersion().then(version => console.log("AdobeExperienceSDK: ACPGriffon version: " + version));
+AEPAssurance.getVersion().then(version => console.log("AdobeExperienceSDK: AEPAssurance version: " + version));
 ```
 
 ##### Registering the extension with ACPCore:
 
-> Note: It is recommended to initialize the SDK via native code inside your AppDelegate and MainApplication in iOS and Android respectively. However, you can still initialize the SDK in Javascript. For more information see how to initialize [Core](https://github.com/adobe/react-native-acpcore#initializing-the-sdk). 
+> Note: It is recommended to initialize the SDK via native code inside your AppDelegate and MainApplication in iOS and Android respectively. However, you can still initialize the SDK in Javascript. For more information see how to initialize [Core](https://github.com/adobe/react-native-acpcore#initializing-the-sdk).
 
 ###### **iOS**
 ```objective-c
-#import <RCTACPGriffon/ACPGriffon.h>
+#import <RCTAEPAssurance/AEPAssurance.h>
 
-[ACPGriffon registerExtension];
+[AEPAssurance registerExtension];
 ```
 
 ###### **Android:**
 ```java
-import com.adobe.marketing.mobile.Griffon;
-Griffon.registerExtension();
+import com.adobe.marketing.mobile.Assurance;
+Assurance.registerExtension();
 ```
 
-##### Start Griffon session:
+##### Start Assurance session:
 
 ```javascript
-import {ACPGriffon} from '@adobe/react-native-acpgriffon';
-ACPGriffon.startSession("{your-griffon-session-url}");
+import {AEPAssurance} from '@adobe/react-native-aepassurance';
+AEPAssurance.startSession("{your-assurance-session-url}");
 ```
 
 ## Additional React Native Plugins
