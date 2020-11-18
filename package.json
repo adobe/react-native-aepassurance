@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adobe/react-native-acpgriffon"
+    "url": "https://github.com/adobe/react-native-aepassurance"
   },
   "keywords": [
     "react-native",
@@ -19,6 +19,7 @@
     "adobe",
     "adobe experience platform",
     "griffon",
+    "acpgriffon",
     "ios",
     "android"
   ],
