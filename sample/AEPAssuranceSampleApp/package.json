@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@adobe/react-native-acpcore": "1.2.3",
-    "@adobe/react-native-aepassurance": "file:../../adobe-react-native-aepassurance-1.0.0.tgz",
+    "@adobe/react-native-aepassurance": "file:../../adobe-react-native-aepassurance-1.1.0.tgz",
     "@react-native-community/cli-platform-ios": "^4.13.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.2",
