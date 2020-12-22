@@ -13,7 +13,7 @@ jobs:
 
   build-ios:
     macos:
-      xcode: "11.0"
+      xcode: "12.0"
 
     steps:
       - checkout
