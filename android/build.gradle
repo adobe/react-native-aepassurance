@@ -33,8 +33,7 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    implementation files('libs/aepcorebridge.aar')
+dependencies {    
     implementation 'com.facebook.react:react-native:+'
     api 'com.adobe.marketing.mobile:assurance:1.0.0'
 }
