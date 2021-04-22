@@ -9,6 +9,9 @@ clean:
 	(cd android && ./gradlew clean)
 	(cd ios && xcodebuild clean -workspace RCT${PROJECT_NAME}.xcworkspace -scheme RCT${PROJECT_NAME})
 
+pod-update:
+	gem install cocoapods
+
 build-android:
 	(cd android && ./gradlew build -x lint)
 
@@ -18,7 +21,7 @@ build-ios: setup
 build-sample-android:
 	(cd sample/AEP*SampleApp/android && ./gradlew assembleRelease)
 
-build-sample-ios:
+build-sample-ios: pod-update
 	(cd sample/AEP*SampleApp/ios && pod install && xcodebuild build -workspace AEPAssuranceSampleApp.xcworkspace -scheme AEPAssuranceSampleApp CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
 
 run-tests:
