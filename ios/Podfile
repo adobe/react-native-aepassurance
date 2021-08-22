@@ -1,18 +1,39 @@
-# Uncomment the next line to define a global platform for your project
-require_relative '../node_modules/react-native/scripts/react_native_pods'
-require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-
 platform :ios, '10.0'
 
-
-
 target 'RCTAEPAssurance' do
-  config = use_native_modules!
-  use_react_native!(:path => config["reactNativePath"])
+  # inherit! :search_paths
+  # Pods for testing
 
-  use_flipper!
-  post_install do |installer|
-    flipper_post_install(installer)
+  react_native_path = "../node_modules/react-native"
+
+  pod "React-Core", :path => "#{react_native_path}/React"
+  pod "React-cxxreact", :path => "#{react_native_path}/ReactCommon/cxxreact"
+  pod "React-jsi", :path => "#{react_native_path}/ReactCommon/jsi"
+  pod "React-jsiexecutor", :path => "#{react_native_path}/ReactCommon/jsiexecutor"
+  pod "React-jsinspector", :path => "#{react_native_path}/ReactCommon/jsinspector"
+
+  pod 'DoubleConversion', :podspec => "#{react_native_path}/third-party-podspecs/DoubleConversion.podspec"
+  pod "yoga", :path => "#{react_native_path}/ReactCommon/yoga"
+  pod "Folly", :podspec => "#{react_native_path}/third-party-podspecs/Folly.podspec"
+
+  pod 'AEPAssurance', '~> 1.0'
+end
+
+post_install do |installer|
+  ## Fix for XCode 12.5 beta
+  find_and_replace("../node_modules/react-native/React/CxxBridge/RCTCxxBridge.mm",
+  "_initializeModules:(NSArray<id<RCTBridgeModule>> *)modules", "_initializeModules:(NSArray<Class> *)modules")
+end
+
+def find_and_replace(dir, findstr, replacestr)
+  Dir[dir].each do |name|
+      text = File.read(name)
+      replace = text.gsub(findstr,replacestr)
+      if text != replace
+          puts "Fix: " + name
+          File.open(name, "w") { |file| file.puts replace }
+          STDOUT.flush
+      end
   end
-
+  Dir[dir + '*/'].each(&method(:find_and_replace))
 end
