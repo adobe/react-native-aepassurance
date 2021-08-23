@@ -69,12 +69,13 @@ import {AEPAssurance} from '@adobe/react-native-aepassurance';
 ##### Getting the extension version:
 
 ```javascript
-AEPAssurance.getVersion().then(version => console.log("AdobeExperienceSDK: AEPAssurance version: " + version));
+AEPAssurance.extensionVersion().then(version => console.log("AdobeExperienceSDK: AEPAssurance version: " + version));
 ```
 
 ##### Registering the extension with ACPCore:
 
-> Note: It is recommended to initialize the SDK via native code inside your AppDelegate and MainApplication in iOS and Android respectively. However, you can still initialize the SDK in Javascript. For more information see how to initialize [Core](https://github.com/adobe/react-native-acpcore#initializing-the-sdk).
+It is recommended to initialize the SDK via native code inside your AppDelegate and MainApplication in iOS and Android respectively.
+
 
 ###### **iOS**
 ```objective-c

@@ -14,16 +14,14 @@ import AEPAssurance from '../js/AEPAssurance';
 
 describe('AEPAssurance', () => {
     test('Test Extension version',  () => {
+      const spy = jest.spyOn(NativeModules.AEPAssurance, 'extensionVersion');
+      AEPAssurance.extensionVersion();
+      expect(spy).toHaveBeenCalled();
+    });
 
-    const spy = jest.spyOn(NativeModules.AEPAssurance, 'getExtensionVersion');
-    AEPAssurance.extensionVersion();
-    expect(spy).toHaveBeenCalled();
-});
-
-test('Test Start session', () => {
-
-    const spy = jest.spyOn(NativeModules.AEPAssurance, 'startSession');
-    AEPAssurance.startSession('');
-    expect(spy).toHaveBeenCalled();
-});
+    test('Test Start session', () => {
+      const spy = jest.spyOn(NativeModules.AEPAssurance, 'startSession');
+      AEPAssurance.startSession('');
+      expect(spy).toHaveBeenCalled();
+    });
 });
