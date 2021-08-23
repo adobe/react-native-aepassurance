@@ -18,12 +18,17 @@ jobs:
     steps:
       - checkout
       - run: npm install
+
       # restore pods related caches
       - restore_cache:
           keys:
             - 1-gems-{{ checksum "ios/Gemfile.lock" }}
 
       # make sure we're on the right version of cocoapods
+      - run:
+           name: Install latest Cocoapods
+           command: sudo gem install cocoapods
+
       - run:
           name: Verify Cocoapods Version
           command: cd ios && bundle check || bundle install --path vendor/bundle
@@ -41,15 +46,19 @@ jobs:
           command: make build-ios
 
   unit-test:
-    docker:
-      - image: circleci/node
+    macos:
+      xcode: "12.0"
 
     steps:
       - checkout
+
       - run: npm install
+      - run: npm install jest@24.8.0 -g
+
       - run:
           name: Unit Tests
           command: make run-tests
+
 
   build-sample-app-android:
     docker:
@@ -94,8 +103,8 @@ workflows:
   version: 2
   ci-workflow:
     jobs:
+      - unit-test
       - build-sample-app-android
       - build-sample-app-ios
       - build-android
       - build-ios
-      - unit-test

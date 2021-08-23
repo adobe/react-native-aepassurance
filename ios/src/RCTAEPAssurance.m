@@ -22,7 +22,7 @@ RCT_EXPORT_MODULE(AEPAssurance);
     return dispatch_get_main_queue();
 }
 
-RCT_REMAP_METHOD(getExtensionVersion, getExtensionVersionWithResolver:(RCTPromiseResolveBlock)resolve rejector: (RCTPromiseRejectBlock)reject){
+RCT_REMAP_METHOD(extensionVersion, getExtensionVersionWithResolver:(RCTPromiseResolveBlock)resolve rejector: (RCTPromiseRejectBlock)reject){
     resolve([AEPAssurance extensionVersion]);
 }
 

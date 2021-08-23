@@ -16,6 +16,6 @@ export default {
         NativeModules.AEPAssurance.startSession(url);
     },
     extensionVersion : () => {
-        return Promise.resolve(NativeModules.AEPAssurance.getExtensionVersion());
+        return Promise.resolve(NativeModules.AEPAssurance.extensionVersion());
     }
 };

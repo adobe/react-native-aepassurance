@@ -1,6 +1,6 @@
-jest.mock('../node_modules/react-native/Libraries/BatchedBridge/NativeModules', () => ({
+jest.mock('NativeModules', () => ({
     AEPAssurance: {
-        getExtensionVersion: jest.fn(),
+        extensionVersion: jest.fn(() => new Promise(resolve => resolve())),
         startSession: jest.fn()
     }
  }));

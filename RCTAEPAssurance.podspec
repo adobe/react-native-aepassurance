@@ -15,8 +15,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
-  s.frameworks = 'UIKit', 'SystemConfiguration', 'WebKit'
-  s.library = 'sqlite3.0', 'c++', 'z'
-  s.vendored_frameworks = 'ios/libs/AEPAssurance.xcframework'
+  s.dependency "AEPAssurance", '~> 1.0'
 
 end
