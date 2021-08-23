@@ -25,7 +25,7 @@ build-sample-ios: pod-update
 	(cd SampleApp/ios && pod install && xcodebuild build -workspace SampleApp.xcworkspace -scheme SampleApp CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
 
 run-tests:
-	./node_modules/.bin/jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand
+	jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand
 
 run-tests-locally: setup
 	./node_modules/.bin/jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/
