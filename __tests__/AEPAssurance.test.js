@@ -14,7 +14,7 @@ import AEPAssurance from '../js/AEPAssurance';
 
 describe('AEPAssurance', () => {
     test('Test Extension version',  () => {
-      const spy = jest.spyOn(NativeModules.AEPAssurance, 'getExtensionVersion');
+      const spy = jest.spyOn(NativeModules.AEPAssurance, 'extensionVersion');
       AEPAssurance.extensionVersion();
       expect(spy).toHaveBeenCalled();
     });

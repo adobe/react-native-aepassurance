@@ -25,7 +25,7 @@ public class RCTAEPAssuranceModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void getExtensionVersion(final Promise promise) {
+    public void extensionVersion(final Promise promise) {
         promise.resolve(Assurance.extensionVersion());
     }
 
