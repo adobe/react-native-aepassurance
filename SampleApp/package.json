@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@adobe/react-native-acpcore": "^2.0.0",
-    "@adobe/react-native-aepassurance": "file:../adobe-react-native-aepassurance-2.0.0.tgz",
+    "@adobe/react-native-aepassurance": "file:../adobe-react-native-aepassurance-2.0.1.tgz",
     "react": "17.0.2",
     "react-native": "0.65.1"
   },
