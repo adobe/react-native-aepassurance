@@ -28,7 +28,7 @@ Install and link the `@adobe/react-native-aepassurance` package:
 
 ```bash
 cd MyReactApp
-npm install @adobe/react-native-aepassurance
+npm install @adobe/react-native-aepassurance@2.0.1
 ```
 
 #### 2.1 Link
