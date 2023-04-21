@@ -5,7 +5,7 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/adobe/react-native-aepassurance/main.svg?logo=circleci)](https://circleci.com/gh/adobe/workflows/react-native-aepassurance)
 [![license](https://img.shields.io/npm/l/@adobe/react-native-aepassurance.svg)](https://github.com/adobe/react-native-aepassurance/blob/main/LICENSE)
 
-`@adobe/react-native-aepassurance` is a wrapper around the iOS and Android [AEPAssurance SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-experience-platform-assurance) to allow for integration with React Native applications. Functionality to start Assurance session is provided through JavaScript documented below.
+`@adobe/react-native-aepassurance` is a wrapper around the iOS and Android [AEPAssurance SDK](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/) to allow for integration with React Native applications. Functionality to start Assurance session is provided through JavaScript documented below.
 
 
 ## Installation
@@ -59,7 +59,7 @@ make run-tests-locally
 
 ## Usage
 
-### [Assurance](https://aep-sdks.gitbook.io/docs/beta/project-griffon/using-project-griffon)
+### [Assurance](https://developer.adobe.com/client-sdks/previous-versions/documentation/platform-assurance-sdk/)
 
 ##### Importing the extension:
 ```javascript
