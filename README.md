@@ -59,7 +59,7 @@ make run-tests-locally
 
 ## Usage
 
-### [Assurance](https://developer.adobe.com/client-sdks/previous-versions/documentation/platform-assurance-sdk/)
+### Assurance
 
 ##### Importing the extension:
 ```javascript
