@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AC33DF57B1279F1F6FFD164 /* libPods-RCTAEPAssurance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A31D9C0212316AFAE6AC68 /* libPods-RCTAEPAssurance.a */; };
 		B6B8293D254237F4007CE659 /* RCTAEPAssurance.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8293B254237F4007CE659 /* RCTAEPAssurance.m */; };
-		FABE3E3B895AD6299D06E270 /* libPods-RCTAEPAssurance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A28722C91097DD34C33349 /* libPods-RCTAEPAssurance.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,12 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		06F28A3779900F5C0A16014B /* Pods-RCTAEPAssurance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAEPAssurance.debug.xcconfig"; path = "Target Support Files/Pods-RCTAEPAssurance/Pods-RCTAEPAssurance.debug.xcconfig"; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRCTAEPAssurance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTAEPAssurance.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		28A28722C91097DD34C33349 /* libPods-RCTAEPAssurance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCTAEPAssurance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8472CDA8D4D2E05CB8F31D88 /* Pods-RCTAEPAssurance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAEPAssurance.release.xcconfig"; path = "Target Support Files/Pods-RCTAEPAssurance/Pods-RCTAEPAssurance.release.xcconfig"; sourceTree = "<group>"; };
+		1842BD360ED5B4CEECDB25C7 /* Pods-RCTAEPAssurance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAEPAssurance.release.xcconfig"; path = "Target Support Files/Pods-RCTAEPAssurance/Pods-RCTAEPAssurance.release.xcconfig"; sourceTree = "<group>"; };
+		8F1FBA1F6AB59E6CD04A608D /* Pods-RCTAEPAssurance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTAEPAssurance.debug.xcconfig"; path = "Target Support Files/Pods-RCTAEPAssurance/Pods-RCTAEPAssurance.debug.xcconfig"; sourceTree = "<group>"; };
 		B6B8293B254237F4007CE659 /* RCTAEPAssurance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTAEPAssurance.m; path = src/RCTAEPAssurance.m; sourceTree = "<group>"; };
 		B6B8293C254237F4007CE659 /* RCTAEPAssurance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTAEPAssurance.h; path = src/RCTAEPAssurance.h; sourceTree = "<group>"; };
+		C5A31D9C0212316AFAE6AC68 /* libPods-RCTAEPAssurance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCTAEPAssurance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABE3E3B895AD6299D06E270 /* libPods-RCTAEPAssurance.a in Frameworks */,
+				6AC33DF57B1279F1F6FFD164 /* libPods-RCTAEPAssurance.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,14 +52,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22E17ACBA0BE507AF2B9E0B7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				28A28722C91097DD34C33349 /* libPods-RCTAEPAssurance.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
@@ -67,17 +59,25 @@
 				B6B8293B254237F4007CE659 /* RCTAEPAssurance.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				5AE60BE150183BEF20AEAF50 /* Pods */,
-				22E17ACBA0BE507AF2B9E0B7 /* Frameworks */,
+				E41608B23C3E609B5AD79831 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		5AE60BE150183BEF20AEAF50 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				06F28A3779900F5C0A16014B /* Pods-RCTAEPAssurance.debug.xcconfig */,
-				8472CDA8D4D2E05CB8F31D88 /* Pods-RCTAEPAssurance.release.xcconfig */,
+				8F1FBA1F6AB59E6CD04A608D /* Pods-RCTAEPAssurance.debug.xcconfig */,
+				1842BD360ED5B4CEECDB25C7 /* Pods-RCTAEPAssurance.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E41608B23C3E609B5AD79831 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5A31D9C0212316AFAE6AC68 /* libPods-RCTAEPAssurance.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +87,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RCTAEPAssurance" */;
 			buildPhases = (
-				87D50349191EA16B7AB8285D /* [CP] Check Pods Manifest.lock */,
+				808ED95E9D47B6CEA734F6D7 /* [CP] Check Pods Manifest.lock */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -134,7 +134,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		87D50349191EA16B7AB8285D /* [CP] Check Pods Manifest.lock */ = {
+		808ED95E9D47B6CEA734F6D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,7 +274,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06F28A3779900F5C0A16014B /* Pods-RCTAEPAssurance.debug.xcconfig */;
+			baseConfigurationReference = 8F1FBA1F6AB59E6CD04A608D /* Pods-RCTAEPAssurance.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,7 +297,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8472CDA8D4D2E05CB8F31D88 /* Pods-RCTAEPAssurance.release.xcconfig */;
+			baseConfigurationReference = 1842BD360ED5B4CEECDB25C7 /* Pods-RCTAEPAssurance.release.xcconfig */;
 			buildSettings = {
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = (
